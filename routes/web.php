@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', function () {
+    return view('welcome');
+});
+
 Route::middleware('year')->group(function() {
     Route::group(['prefix'=>'filmout'], function(){
         // Routes included with prefix "filmout"
