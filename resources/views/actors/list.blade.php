@@ -3,7 +3,7 @@
 @section('name', 'Lista de Actores')
 
 @section('content')
-<h1>{{$name}}</h1>
+<h1>{{$name}} @if(isset($count)) <span class="badge badge-info">{{$count}}</span> @endif</h1>
 
 @if($actors->isEmpty())
     <div class="alert alert-danger">No se han encontrado actores</div>

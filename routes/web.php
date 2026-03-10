@@ -48,4 +48,5 @@ Route::group(['prefix' => 'actorout'], function () {
     // Routes included with prefix "actorout"
     Route::get('actors/', [ActorController::class, "readActors"])->name('actors');
     Route::get('actorsByDecade/{decade?}', [ActorController::class, "readActorsByDecade"])->name('actorsByDecade');
+    Route::get('countActors/', [ActorController::class, "countActors"])->name('countActors');
 });
