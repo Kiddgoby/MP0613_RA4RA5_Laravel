@@ -33,6 +33,7 @@
             <button type="submit" class="btn btn-primary ml-2">Buscar</button>
         </form>
     </li>
+    <li><a href="/actorout/countActors">Contar Actores</a></li>
 </ul>
 
 
