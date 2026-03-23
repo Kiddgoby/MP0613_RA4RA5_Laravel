@@ -57,4 +57,11 @@ class ActorController extends Controller
             ]);
         }
     }
+
+    public function readActorsByFilm($filmId)
+    {
+        $name = "Lista de Actores";
+        $actors = Actor::where('film_id', $filmId)->get();
+        return view("actors.list", ["actors" => $actors, "name" => $name]);
+    }
 }
